@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Test</title>
+  <script>
+    function displayInputValue() {
+      var inputValue = document.getElementById('inputField').value;
+      alert(inputValue);
+      document.getElementById('displayArea').textContent = 'Entered Value: ' + inputValue;
+    }
+  </script>
+</head>
+<body>
+  <form>
+   
+    <input type="text" id="inputField">
+   
+    <button type="button" onclick="displayInputValue()">Submit</button>
+  </form>
+  <div id="displayArea"></div>
+</body>
+</html>
